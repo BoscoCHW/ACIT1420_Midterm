@@ -1,32 +1,101 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
   background-color: antiquewhite;
   color: #3a3846;
-  font-size: 10px;
 }
 
 header {
-  height: 20px;
-  background-color: #639a88;
+  background-color: #3a3846;
+  position: sticky;
+  top: 0rem;
+}
+
+nav {
+  font-size: 1.5rem;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+nav a {
+  font-family: 'Quicksand', sans-serif;
+}
+
+a:link {
+  color: #FED3BE;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FED3BE;
+}
+
+a:hover {
+  color: #E1BB47;
+}
+
+section {
+  padding: 1rem;
 }
 
 h1 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 3rem;
-  display: inline;
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
 
-o {
+h2 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 0.7rem;
 }
 
-img {
-  max-width: 500px;
+p {
+  padding-bottom: 0.5rem;
+  font-family: 'Antic Slab', serif;
+}
+
+.home > p:nth-child(3)::first-letter, .about > p:nth-child(3)::first-letter {
+  font-size: 300%;
+}
+
+.bakery-img {
+  max-width: 50%;
   float: left;
-  padding: 2rem;
+  padding-right: 1rem;
 }
 
-li:nth-child(2) {
-  padding: 2rem;
+.bread-img {
+  max-width: 20%;
+  float: middle;
+  padding-bottom: 1rem;
 }
+
+#contact-img {
+  max-width: 50%;
+  float: right;
+  padding-bottom: 1rem;
+}
+
+.menu {
+  text-align: center;
+}
+
+div {
+  padding-bottom: 1rem;
+}
+
